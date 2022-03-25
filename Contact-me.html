@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact-me</title>
+</head>
+
+<body>
+  <h2>My Contact Details</h2>
+  <p>Gates Hall Cornell University</p>
+  <p>Ithaca, NY 14853</p>
+  <p>(607)255-9197</p>
+
+  <hr>
+
+  <!-- 
+  (1) In Suggestion we get form, form get and form post. We select "Form Post" becouse author select this
+  (2) In { Form } Element Have { Action= "mailto:Any email" } Attributes  for redirect  the mail when hit submit button
+  (3) "Method" attributes have "post" sub-atributes to post in this case simply means that we're going to transfer what the user types into these input fields into the email client.
+  (4)"enctype" attributes I'm going to add another attribute called encoding type. And this specifies just as up here, we're specifying that our website is encoded in UTF-8,we're going to say that the data in our form is encoded in plain text. So that way, when it launches the Mail app, you won't have these
+  (5)all "INPUT" element Attributes "Name" we need to add is a value to each of these name attributes, because that's going to identify the data that's inside each of these inputs. to identify the data that's inside each of these inputs.
+-->
+  <form action="mailto:lucifierhandson@gmail.com" method="post" enctype="text/plain">
+
+    <label>Your Name: </label>
+    <input type="text" name="yourName">
+    <br>
+    <label for="">Your Email:</label>
+    <input type="email" name="yourEmail">
+    <br>
+    <label for="">Your Quary</label>
+    <br>
+    <textarea name="yourQuary" id="" cols="30" rows="10"></textarea>
+    <br>
+    <input type="submit">
+  </form>
+
+</html>
